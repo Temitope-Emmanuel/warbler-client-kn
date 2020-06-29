@@ -35,7 +35,7 @@ export function authUser(type, userData) {
           resolve(); // indicate that the API call succeeded
         })
         .catch(err => {
-          debugger
+          // debugger
           dispatch(addError(err.message));
           reject(); // indicate the API call failed
         });

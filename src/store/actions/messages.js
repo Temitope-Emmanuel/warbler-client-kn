@@ -29,6 +29,7 @@ export const fetchMessages = () => {
         dispatch(loadMessages(res));
       })
       .catch(err => {
+        console.log(err)
         dispatch(addError(err.message));
       });
   };

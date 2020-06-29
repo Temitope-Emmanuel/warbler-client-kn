@@ -61,6 +61,7 @@ class App extends Component{
           path="/users/:id/messages/new"
           component={withAuth(MessageForm)}
         />
+        <Route render={() => <Redirect to="/" /> } /> 
           </Switch>
       </div>
     )
